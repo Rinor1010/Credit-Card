@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Card App</title>
+  </head>
+  <body>
+    <div class="container__cards">
+      <div class="front">
+        <img src="./images/bg-card-front.png" alt="" />
+        <div class="front__text">
+          <svg
+            width="84"
+            height="47"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff" />
+            <path
+              d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z"
+              stroke="#fff"
+            />
+          </svg>
+          <div class="info">
+            <p class="card__number">
+              <span>0</span>
+              <span>0</span>
+              <span>0</span>
+              <span>0</span>
+              <span>0</span>
+              <span>0</span>
+              <span>0</span>
+              <span>0</span>
+              <span>0</span>
+              <span>0</span>
+              <span>0</span>
+            </p>
+            <div class="text">
+              <p id="card__name">Jane Appleseed</p>
+              <p>
+                <span id="card__month">00</span>/<span id="card__year">00</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="back">
+        <img src="./images/bg-card-back.png" alt="" />
+        <p id="card__cvc">000</p>
+      </div>
+    </div>
+    <div class="container__info">
+      <div class="container__info__div">
+        <div class="info__name">
+          <p>Cardholder name</p>
+          <input
+            type="text"
+            name=""
+            id="name"
+            placeholder="e.g. Jane Appleseed"
+          />
+          <div class="error name"></div>
+        </div>
+        <div class="info__number">
+          <p>Card number</p>
+          <input
+            type="number"
+            name=""
+            id="number"
+            placeholder="e.g. 1234 5678 9123 0000"
+          />
+          <div class="error number"></div>
+        </div>
+        <div class="info__date">
+          <div class="info__date__my">
+            <p>Exp. date(mm/yy)</p>
+            <div class="month-year">
+              <div class="month">
+                <input type="number" name="" id="month" placeholder="MM" />
+                <div class="error emonth"></div>
+              </div>
+              <div class="year">
+                <input type="number" name="" id="year" placeholder="YY" />
+                <div class="error eyear"></div>
+              </div>
+            </div>
+          </div>
+          <div class="info__date__cvc">
+            <p>Cvc</p>
+            <input type="number" name="" id="cvc" placeholder="e.g. 123" />
+            <div class="error cvc"></div>
+          </div>
+        </div>
+        <button class="confirm">Confirm</button>
+      </div>
+    </div>
+  </body>
+</html>
